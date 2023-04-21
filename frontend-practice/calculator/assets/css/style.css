@@ -22,6 +22,7 @@ body .container .title-page {
   color: #8AD;
   font-family: "Sigmar", cursive;
   letter-spacing: 10px;
+  text-shadow: 7px 6px 5px rgba(0, 0, 0, 0.31);
 }
 body .container .calculator {
   width: 410px;
@@ -47,6 +48,13 @@ body .container .calculator .display {
 body .container .calculator .display .value {
   font-size: 30px;
   color: white;
+  background: none;
+  width: 100%;
+  border: none;
+}
+body .container .calculator .display .value:focus, body .container .calculator .display .value:hover {
+  box-shadow: none;
+  outline: 0;
 }
 body .container .calculator .buttons {
   display: flex;

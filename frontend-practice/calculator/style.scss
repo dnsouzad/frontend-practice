@@ -27,6 +27,7 @@ body{
             color: $blue_primary;
             font-family: $font-sigmar;
             letter-spacing: 10px;
+            text-shadow: 7px 6px 5px rgba(0,0,0,0.31);
         }
         .calculator{
             width: 410px;
@@ -34,12 +35,10 @@ body{
             background-color: $blue_primary;
             border-radius: 15px;
             box-shadow: 3px 4px 10px #757575, -1px 0px 10px #a5a5a5;
-            //box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
             overflow: hidden;
             border-right: 8px solid $border_button;
             border-bottom: 8px solid $border_button;
             border-left: 1px solid $border_button;
-            //test
             .display{
                 background-color: $display_color;
                 display: flex;
@@ -52,6 +51,14 @@ body{
                 .value{
                     font-size: 30px;
                     color: white;
+                    background: none;
+                    width: 100%;
+                    border: none;
+                    &:focus,
+                    &:hover{
+                        box-shadow: none;
+                        outline: 0;
+                    }
                 }
             }
             .buttons{
