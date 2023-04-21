@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sigmar&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body .container {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 100px;
+}
+body .container .title-page {
+  color: #8AD;
+  font-family: "Sigmar", cursive;
+  letter-spacing: 10px;
+}
+body .container .calculator {
+  width: 410px;
+  height: 600px;
+  background-color: #8AD;
+  border-radius: 15px;
+  box-shadow: 3px 4px 10px #757575, -1px 0px 10px #a5a5a5;
+  overflow: hidden;
+  border-right: 8px solid #3971c6;
+  border-bottom: 8px solid #3971c6;
+  border-left: 1px solid #3971c6;
+}
+body .container .calculator .display {
+  background-color: #a1a1a1;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 4px;
+  box-shadow: inset 7px 7px 3px -3px rgba(0, 0, 0, 0.6);
+}
+body .container .calculator .display .value {
+  font-size: 30px;
+  color: white;
+}
+body .container .calculator .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 80%;
+  padding: 10px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+body .container .calculator .buttons .btn {
+  width: 24%;
+  height: 15%;
+  position: relative;
+  top: 0px;
+  box-shadow: rgba(0, 0, 0, 0.1882352941) 0px 10px 20px, rgba(0, 0, 0, 0.231372549) 0px 6px 6px;
+  font-family: "Chivo Mono", monospace;
+  background: #08F;
+  border: none;
+  border-radius: 10px;
+  border-right: 4px solid #3971c6;
+  border-bottom: 4px solid #3971c6;
+  cursor: pointer;
+  color: white;
+  font-size: 26px;
+  transition: all 0.1s linear;
+}
+body .container .calculator .buttons .btn.easer, body .container .calculator .buttons .btn.zero {
+  width: 49%;
+}
+body .container .calculator .buttons .btn:hover {
+  top: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1882352941) 0px 8px 20px, rgba(0, 0, 0, 0.231372549) 0px 4px 6px;
+  border-right-width: 3px;
+  border-bottom-width: 3px;
+}
+body .container .calculator .buttons .btn:active {
+  top: 4px;
+  border-right-width: 0px;
+  border-bottom: 2px solid #3971c6;
+  border-top: 2px solid #3971c6;
+  border-left: 2px solid #3971c6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}/*# sourceMappingURL=style.css.map */
