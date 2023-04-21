@@ -1,0 +1,110 @@
+@import '../config/fonts';
+@import '../config/default';
+@import '../config/colors';
+
+$blue_primary: #8AD;
+$display_color: #a1a1a1;
+$buttons_color: #08F;
+$easer_button: #d45252;
+$equal_button: #A5F;
+$text_color: #205;
+$text_button_color: #FFF;
+$border_button: darken($blue_primary, 20);
+
+body{
+    font-family: $font-montserrat;
+    .container{
+        background-color: $background;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        padding: 20px 100px;
+        .title-page{
+            color: $blue_primary;
+            font-family: $font-sigmar;
+            letter-spacing: 10px;
+        }
+        .calculator{
+            width: 410px;
+            height: 600px;
+            background-color: $blue_primary;
+            border-radius: 15px;
+            box-shadow: 3px 4px 10px #757575, -1px 0px 10px #a5a5a5;
+            //box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            overflow: hidden;
+            border-right: 8px solid $border_button;
+            border-bottom: 8px solid $border_button;
+            border-left: 1px solid $border_button;
+            //test
+            .display{
+                background-color: $display_color;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                padding: 10px;
+                margin: 20px;
+                border-radius: 4px;
+                box-shadow: inset 7px 7px 3px -3px rgba(0,0,0,0.6);
+                .value{
+                    font-size: 30px;
+                    color: white;
+                }
+            }
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                height: 80%;
+                padding: 10px;
+                column-gap: 5px;
+                .btn{
+                    width: 24%;
+                    height: 15%;
+                    position: relative;
+                    top: 0px;
+                    box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+                    font-family: $font-chivo;
+                    background: $buttons_color;
+                    border: none;
+                    border-radius: 10px;
+                    border-right: 4px solid $border_button;
+                    border-bottom: 4px solid $border_button;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 26px;
+                    transition: all 0.1s linear;
+                    &.easer,
+                    &.zero{
+                        width: 49%;
+                    }
+                    &:hover{
+                        top: 2px;
+                        box-shadow: #00000030 0px 8px 20px, #0000003b 0px 4px 6px;
+                        border-right-width: 3px;
+                        border-bottom-width: 3px;
+                    }
+                    &:active{
+                        top: 4px;
+                        //box-shadow: #00000030 0px 6px 20px, #0000003b 0px 2px 6px;
+                        border-right-width: 0px;
+                        border-bottom: 2px solid $border_button;
+                        border-top: 2px solid $border_button;
+                        border-left: 2px solid $border_button;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                    }
+                    
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
